@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "283372355003",
+    "firebase_url": "https://vtalk-f21df-default-rtdb.firebaseio.com",
+    "project_id": "vtalk-f21df",
+    "storage_bucket": "vtalk-f21df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283372355003:android:f5677521e3c617f3b1189e",
+        "android_client_info": {
+          "package_name": "com.akp.vtalkanoop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283372355003-pvfvch5vk9nsetvssbovtuqhnp3iq7l5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akp.vtalkanoop",
+            "certificate_hash": "7531a3b8749aeb7713c9b3b84fa5a9d867bacd1d"
+          }
+        },
+        {
+          "client_id": "283372355003-fajme0al10l7b3rr9d9v18sk80ijuuu2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9cwl1V_w6c0wxyW9fQifKvxj1qE_m7Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283372355003-fajme0al10l7b3rr9d9v18sk80ijuuu2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

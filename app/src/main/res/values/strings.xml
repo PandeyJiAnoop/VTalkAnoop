@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">VTalk</string>
+    <string name="text">Love Astrology. Scroll to continue with content. ...
+Vedic Astrology. Vedic astrology, or Hindu astrology, is a form of Indian astrology that can be dated back thousands of years. ...
+Natal Astrology. ...
+Medical Astrology. ...
+Horary Astrology. ...
+Electional Astrology. ...
+Uranian Astrology.</string>
+    <string name="private_app_id" translatable="false">9cf45bbd479d40cdbf28d6aee2b2fccc</string>    <!-- Obtain a temp Access Token at https://dashboard.agora.io -->
+    <!-- You will need to deploy your own token server for production release -->
+    <!-- Leave this value empty if Security keys/Token is not enabled for your project -->
+    <string name="agora_access_token"></string>
+
+    <!-- Main Activity -->
+    <string name="start_broadcast_title">Start Live Streaming</string>
+    <string name="topic_edit_hint">Enter a channel name</string>
+    <string name="powered_by_agora" translatable="false">Powered by Vtalk.in</string>
+    <string name="need_necessary_permissions">Necessary permissions acquired</string>
+
+    <!-- Setting Activity -->
+    <string name="setting_title">Settings</string>
+    <string name="setting_resolution_title">Resolution</string>
+    <string name="setting_stats_title">Show video statistics</string>
+    <string name="setting_mirror_local_title">Local video preview mirror mode</string>
+    <string name="setting_mirror_remote_title">Remote video render mirror mode</string>
+    <string name="setting_mirror_encode_title">Local video encode mirror mode</string>
+
+    <string-array name="string_array_resolutions">
+        <item>320x240</item>
+        <item>480x360</item>
+        <item>640x360</item>
+        <item>640x480</item>
+        <item>960x540</item>
+        <item>1280x720</item>
+    </string-array>
+
+    <!-- Live Activity -->
+    <string name="fake_user_name" translatable="false">Shakespeare</string>
+
+    <!-- Role Choose Activity -->
+    <string name="select_role_title">Please choose your role</string>
+    <string name="select_role_broadcaster">Broadcaster</string>
+    <string name="select_role_audience">Audience</string>
+    <string name="select_role_broadcaster_hint">Join as broadcaster</string>
+    <string name="select_role_audience_hint">Join as audience</string>
+
+    <!-- Legal digits for channel names -->
+    <string name="legal_channel_name_characters" translatable="false">&#xA0;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&amp;()+,-:;&lt;=.>?@[]^_`{|}~</string>
+
+
+    <!--Short strings-->
+    <string name="permissions_denied">Permissions denied</string>
+    <string name="permissions_grant">Please grant permissions</string>
+    <string name="call_via">Call using</string>
+    <string name="restricted_area">Restricted area ⚠️</string>
+    <string name="touch_disabled">Touch Disabled</string>
+
+    <!--Long strings-->
+    <string name="not_whatsapp_number">Phone number doesn\'t exist on WhatsApp</string>
+    <string name="whatsapp_not_found">WhatsApp is not installed on this device</string>
+    <string name="no_internet">Device is not connected to the internet</string>
+    <string name="touch_service_running">Service is running in the background</string>
+
+
+    <string name="aresurelogout">Are you sure you want to log out?</string>
+    <string name="newVersion">Update to the latest Version</string>
+    <string name="update">Update</string>
+
+    <string name="incoming_meeting_invitation">Incoming Invitation</string>
+    <string name="sending_meeting_invitation">Sending Invitation</string>
+
+
+</resources>

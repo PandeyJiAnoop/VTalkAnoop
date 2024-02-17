@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Home.DatingDetails">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        android:id="@+id/header"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Friend List"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+        </TextView>
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="15dp"
+            android:id="@+id/back_img"
+            android:tint="@color/white"
+            android:src="@drawable/back"
+            android:layout_height="50dp">
+        </ImageView>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/pink"
+            android:layout_below="@+id/header"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:backgroundTint="#9B4471"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/data_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom|right"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/red"
+            android:src="@drawable/ic_video_camera"
+            android:layout_margin="16dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

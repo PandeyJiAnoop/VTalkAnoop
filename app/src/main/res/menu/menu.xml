@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/ic_chat_box"
+        android:title="Chat" />
+
+    <item
+        android:id="@+id/live"
+        android:icon="@drawable/ic_video_camera"
+        android:title="Live" />
+
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/ic_wallet"
+        android:title="Wallet" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person"
+        android:title="Profile" />
+
+</menu>

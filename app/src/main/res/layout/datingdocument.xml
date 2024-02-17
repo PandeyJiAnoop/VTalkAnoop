@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/green">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/booking" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:backgroundTint="@color/localBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:id="@+id/img_upload"
+                    android:visibility="gone"
+                    android:background="@drawable/upload_reg"
+                    android:layout_height="150dp">
+                </ImageView>
+                <VideoView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:id="@+id/video_upload"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:id="@+id/tv"
+            android:textColor="@color/remoteBackground"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:text="Your uploaded photo and video request has reached the admin and it takes 1-2 working days.If this fails for any reason,you will receieve a message from admin."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/darkblue"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Upload"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

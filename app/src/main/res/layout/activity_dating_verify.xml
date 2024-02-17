@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ChatScreen">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_500">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:src="@drawable/back"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitStart"
+                android:id="@+id/back_btn"
+                android:tint="@color/white"
+                android:background="@color/purple_500"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Sort Video for Verification"
+                android:id="@+id/username"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/green">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/booking" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="Click here to upload!"
+                android:gravity="center"
+                android:id="@+id/clieck"
+                android:textColor="@color/black" />
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:backgroundTint="@color/localBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+<!--                <ImageView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_marginRight="2dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:id="@+id/img_upload"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:background="@drawable/upload_reg"-->
+<!--                    android:layout_height="150dp">-->
+<!--                </ImageView>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <VideoView
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:id="@+id/video_upload"/>
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:id="@+id/tv"
+                android:textColor="@color/remoteBackground"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:text="Your uploaded photo and video request has reached the admin and it takes 1-2 working days.If this fails for any reason,you will receieve a message from admin."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/buttonOk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/darkblue"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="Upload"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

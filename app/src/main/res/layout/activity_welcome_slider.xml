@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".BasicUI.WelcomeSlider">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:centered="true"
+        app:fillColor="#FFC107"
+        app:pageColor="#fff">
+    </com.viewpagerindicator.CirclePageIndicator>
+    <View
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_above="@+id/bottom"
+        android:layout_height="0.1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottom"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:textColor="@color/grey"
+            android:layout_height="wrap_content"
+            android:text="Skip" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

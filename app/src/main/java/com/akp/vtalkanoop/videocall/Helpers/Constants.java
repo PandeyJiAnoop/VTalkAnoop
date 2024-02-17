@@ -1,0 +1,23 @@
+package com.akp.vtalkanoop.videocall.Helpers;
+
+public class Constants {
+
+    /*Mime types*/
+    public static final String MIME_WHATSAPP_VOIP_CALL = "vnd.android.cursor.item/vnd.com.whatsapp.voip.call";
+    public static final String MIME_WHATSAPP_VIDEO_CALL = "vnd.android.cursor.item/vnd.com.whatsapp.video.call";
+    public static final String MIME_WHATSAPP_BUSINESS_VOIP_CALL = "vnd.android.cursor.item/vnd.com.whatsapp.w4b.voip.call";
+    public static final String MIME_WHATSAPP_BUSINESS_VIDEO_CALL = "vnd.android.cursor.item/vnd.com.whatsapp.w4b.video.call";
+
+
+    /*Package names*/
+    public static final String PACKAGE_WHATSAPP = "com.whatsapp";
+    public static final String PACKAGE_WHATSAPP_BUSINESS = "com.whatsapp.w4b";
+
+    /*URLs*/
+    public static final String URL_WHATSAPP = "https://www.whatsapp.com";
+
+    /*Notification params*/
+    public static final String NOTIFICATION_CHANNEL_ID = "default";
+    public static final String NOTIFICATION_CHANNEL_NAME = "WhatsApp Video Caller Service";
+
+}

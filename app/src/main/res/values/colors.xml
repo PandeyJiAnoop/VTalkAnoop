@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#032C70</color>
+    <color name="purple_500">#032C70</color>
+    <color name="purple_700">#032C70</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#eee</color>
+    <color name="red">#AE3127</color>
+    <color name="blue">#175D9B</color>
+    <color name="pink">#EB6387</color>
+    <color name="darkblue">#180F5E</color>
+    <color name="yellow">#FFCE49</color>
+    <color name="green">#218825</color>
+    <color name="black_full_transparent">#22000000</color>
+    <!-- Chat Activity -->
+    <color name="localBackground">#827b92</color>
+    <color name="remoteBackground">#484258</color>
+
+    <color name="blue_medium">#44A2FC</color>
+    <color name="blue_light">#0ECFFF</color>
+    <color name="blue_alpha">#9CD9FF</color>
+
+    <color name="black_half_transparent">#66000000</color>
+
+    <color name="colorTextIcons">#FFFFFF</color>
+
+    <color name="startColor">#eb1d27</color>
+    <color name="centerColor">#eb1d27</color>
+    <color name="endCOlor">#4F052C</color>
+    <color name="transparent">#8e030303</color>
+</resources>

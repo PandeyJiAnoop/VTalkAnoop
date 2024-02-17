@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:background="#fff"
+        android:src="@drawable/hello" />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="serif-monospace"
+        android:text="Service Provider is busy on another call!"
+        android:layout_margin="10dp"
+        android:textColor="@color/endCOlor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wait..."
+        android:textColor="@color/green"
+        android:textSize="22sp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnDialog"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_margin="14dp"
+        android:background="@drawable/searchingshapee"
+        android:text="Exit"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>

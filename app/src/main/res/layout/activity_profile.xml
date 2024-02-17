@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Home.Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        android:id="@+id/header"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+        </TextView>
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="15dp"
+            android:id="@+id/back_img"
+            android:tint="@color/white"
+            android:src="@drawable/back"
+            android:layout_height="50dp">
+        </ImageView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/logout_img"
+            android:text="Logout"
+            android:drawableTint="@color/white"
+            android:drawableRight="@android:drawable/ic_lock_power_off"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rectangle_box"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_above="@+id/stukcall_btn"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/srl_refresh"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/side_nav_bar"
+                android:padding="15dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/profile_img"
+                    android:includeFontPadding="false"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mobile_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_text"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/profile_img"
+                    android:text=""
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-85dp"
+                android:padding="15dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_weight="1"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/side_nav_bar"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/diamond" />
+
+                        <TextView
+                            android:id="@+id/payment_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text=""
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+<!--                        \u20B9-->
+                        <TextView
+                            android:id="@+id/payment_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/payment_tv"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:text="(Available Diamond)"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:id="@+id/add_photo_card"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/side_nav_bar"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/booking_label"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/booking" />
+                        <TextView
+                            android:id="@+id/booking_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/booking_label"
+                            android:layout_centerHorizontal="true"
+                            android:text="Go Live"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="21sp" />
+                        <TextView
+                            android:id="@+id/online_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/booking_desc"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name_et"
+                        android:hint="Full Name"
+                        android:textSize="13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        android:hint="Email Id"
+                        android:id="@+id/email_et"
+                        android:textSize="13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        android:hint="Phone"
+                        android:id="@+id/mobile_et"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:textSize="13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        android:hint="Enter Address"
+                        android:id="@+id/address_et"
+                        android:textSize="13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        android:hint="About yourself"
+                        android:id="@+id/about_et"
+                        android:textSize="13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/experties_ll"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        android:hint="Enter your expertise"
+                        android:id="@+id/expertise_et"
+                        android:textSize="13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rate_call_ll"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:hint="Enter Chat rate"
+                        android:id="@+id/rate_call_et"
+                        android:textSize="13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rate_ll"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        android:inputType="number"
+                        android:maxLength="2"
+
+                        android:hint="Enter voice call rate"
+                        android:id="@+id/rate_et"
+                        android:textSize="13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rate_video_ll"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20dp"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:hint="Enter video call rate"
+                        android:id="@+id/rate_video_et"
+                        android:textSize="13sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/update_btn"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/yellow_button"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Update" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/stukcall_btn"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:paddingRight="20dp"
+        android:drawableRight="@android:drawable/stat_notify_missed_call"
+        android:textColor="@color/white"
+        android:text="Check Your Call Status"
+        android:background="@drawable/rectangle_gradient_pink"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.AppCompatButton>
+</RelativeLayout>
